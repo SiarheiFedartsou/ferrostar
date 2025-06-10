@@ -86,6 +86,7 @@ public struct InstructionsView: View {
                 text: visualInstruction.primaryContent.text,
                 maneuverType: visualInstruction.primaryContent.maneuverType,
                 maneuverModifier: visualInstruction.primaryContent.maneuverModifier,
+                roundaboutExit: visualInstruction.primaryContent.roundaboutExit,
                 distanceFormatter: distanceFormatter,
                 distanceToNextManeuver: step.distance,
                 theme: primaryRowTheme
@@ -105,6 +106,7 @@ public struct InstructionsView: View {
                         text: visualInstruction.primaryContent.text,
                         maneuverType: visualInstruction.primaryContent.maneuverType,
                         maneuverModifier: visualInstruction.primaryContent.maneuverModifier,
+                        roundaboutExit: visualInstruction.primaryContent.roundaboutExit,
                         distanceFormatter: distanceFormatter,
                         distanceToNextManeuver: distanceToNextManeuver,
                         theme: primaryRowTheme
@@ -119,6 +121,7 @@ public struct InstructionsView: View {
                             text: secondaryContent.text,
                             maneuverType: secondaryContent.maneuverType,
                             maneuverModifier: secondaryContent.maneuverModifier,
+                            roundaboutExit: secondaryContent.roundaboutExit,
                             distanceFormatter: distanceFormatter,
                             theme: secondaryRowTheme
                         )
@@ -158,7 +161,8 @@ public struct InstructionsView: View {
                     maneuverModifier: .right,
                     roundaboutExitDegrees: nil,
                     laneInfo: nil,
-                    exitNumbers: []
+                    exitNumbers: [],
+                    roundaboutExit: nil
                 ),
                 secondaryContent: VisualInstructionContent(
                     text: "Merge onto Hwy 123",
@@ -166,7 +170,8 @@ public struct InstructionsView: View {
                     maneuverModifier: .right,
                     roundaboutExitDegrees: nil,
                     laneInfo: nil,
-                    exitNumbers: []
+                    exitNumbers: [],
+                    roundaboutExit: nil
                 ),
                 subContent: nil,
                 triggerDistanceBeforeManeuver: 123
@@ -181,7 +186,8 @@ public struct InstructionsView: View {
                     maneuverModifier: .slightRight,
                     roundaboutExitDegrees: nil,
                     laneInfo: nil,
-                    exitNumbers: []
+                    exitNumbers: [],
+                    roundaboutExit: 2
                 ),
                 secondaryContent: nil,
                 subContent: nil,
@@ -197,7 +203,8 @@ public struct InstructionsView: View {
                     maneuverModifier: .slightLeft,
                     roundaboutExitDegrees: nil,
                     laneInfo: nil,
-                    exitNumbers: []
+                    exitNumbers: [],
+                    roundaboutExit: nil
                 ),
                 secondaryContent: nil,
                 subContent: nil,
@@ -215,7 +222,8 @@ public struct InstructionsView: View {
                     maneuverModifier: .right,
                     roundaboutExitDegrees: nil,
                     laneInfo: nil,
-                    exitNumbers: []
+                    exitNumbers: [],
+                    roundaboutExit: nil
                 ),
                 secondaryContent: VisualInstructionContent(
                     text: "Merge onto Hwy 123",
@@ -223,7 +231,8 @@ public struct InstructionsView: View {
                     maneuverModifier: .right,
                     roundaboutExitDegrees: nil,
                     laneInfo: nil,
-                    exitNumbers: []
+                    exitNumbers: [],
+                    roundaboutExit: nil
                 ),
                 subContent: nil,
                 triggerDistanceBeforeManeuver: 123

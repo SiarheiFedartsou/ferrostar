@@ -11,6 +11,7 @@ public struct DefaultIconographyManeuverInstructionView: View {
     private let text: String
     private let maneuverType: ManeuverType?
     private let maneuverModifier: ManeuverModifier?
+    private let roundaboutExit: UInt16?
     private let distanceToNextManeuver: CLLocationDistance?
     private let distanceFormatter: Formatter
     private let theme: InstructionRowTheme
@@ -22,6 +23,7 @@ public struct DefaultIconographyManeuverInstructionView: View {
     ///   - text: The maneuver instruction.
     ///   - maneuverType: The maneuver type defines the behavior.
     ///   - maneuverModifier: The maneuver modifier defines the direction.
+    ///   - roundaboutExit: Roundabout exit number to display as overlay.
     ///   - distanceFormatter: The formatter which controls distance localization.
     ///   - distanceToNextManeuver: A string that should represent the localized distance remaining.
     ///   - theme: The instruction row theme specifies attributes like colors and fonts for the row.
@@ -29,6 +31,7 @@ public struct DefaultIconographyManeuverInstructionView: View {
         text: String,
         maneuverType: ManeuverType?,
         maneuverModifier: ManeuverModifier?,
+        roundaboutExit: UInt16? = nil,
         distanceFormatter: Formatter,
         distanceToNextManeuver: CLLocationDistance? = nil,
         theme: InstructionRowTheme = DefaultInstructionRowTheme()
@@ -36,6 +39,7 @@ public struct DefaultIconographyManeuverInstructionView: View {
         self.text = text
         self.maneuverType = maneuverType
         self.maneuverModifier = maneuverModifier
+        self.roundaboutExit = roundaboutExit
         self.distanceFormatter = distanceFormatter
         self.distanceToNextManeuver = distanceToNextManeuver
         self.theme = theme
@@ -51,7 +55,8 @@ public struct DefaultIconographyManeuverInstructionView: View {
             if let maneuverType {
                 ManeuverImage(
                     maneuverType: maneuverType,
-                    maneuverModifier: maneuverModifier
+                    maneuverModifier: maneuverModifier,
+                    roundaboutExit: roundaboutExit
                 )
                 .frame(maxWidth: 48)
                 // REVIEW: without this, the first image in the vstack was rendering very small. Curiously subsequent items in the vstack looked reasonable.
@@ -68,6 +73,17 @@ public struct DefaultIconographyManeuverInstructionView: View {
         maneuverModifier: .left,
         distanceFormatter: MKDistanceFormatter(),
         distanceToNextManeuver: 1500.0
+    )
+}
+
+#Preview("Roundabout with exit") {
+    DefaultIconographyManeuverInstructionView(
+        text: "Take the 3rd exit",
+        maneuverType: .roundabout,
+        maneuverModifier: .straight,
+        roundaboutExit: 3,
+        distanceFormatter: MKDistanceFormatter(),
+        distanceToNextManeuver: 500.0
     )
 }
 

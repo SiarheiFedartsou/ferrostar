@@ -3479,6 +3479,10 @@ public struct VisualInstructionContent {
      * The exit number (or similar identifier like "8B").
      */
     public var exitNumbers: [String]
+    /**
+     * The roundabout/rotary exit number (e.g., "take the 3rd exit").
+     */
+    public var roundaboutExit: UInt16?
 
     // Default memberwise initializers are never public by default, so we
     // declare one manually.
@@ -3504,13 +3508,17 @@ public struct VisualInstructionContent {
          */laneInfo: [LaneInfo]?, 
         /**
          * The exit number (or similar identifier like "8B").
-         */exitNumbers: [String]) {
+         */exitNumbers: [String], 
+        /**
+         * The roundabout/rotary exit number (e.g., "take the 3rd exit").
+         */roundaboutExit: UInt16?) {
         self.text = text
         self.maneuverType = maneuverType
         self.maneuverModifier = maneuverModifier
         self.roundaboutExitDegrees = roundaboutExitDegrees
         self.laneInfo = laneInfo
         self.exitNumbers = exitNumbers
+        self.roundaboutExit = roundaboutExit
     }
 }
 
@@ -3536,6 +3544,9 @@ extension VisualInstructionContent: Equatable, Hashable {
         if lhs.exitNumbers != rhs.exitNumbers {
             return false
         }
+        if lhs.roundaboutExit != rhs.roundaboutExit {
+            return false
+        }
         return true
     }
 
@@ -3546,6 +3557,7 @@ extension VisualInstructionContent: Equatable, Hashable {
         hasher.combine(roundaboutExitDegrees)
         hasher.combine(laneInfo)
         hasher.combine(exitNumbers)
+        hasher.combine(roundaboutExit)
     }
 }
 
@@ -3562,7 +3574,8 @@ public struct FfiConverterTypeVisualInstructionContent: FfiConverterRustBuffer {
                 maneuverModifier: FfiConverterOptionTypeManeuverModifier.read(from: &buf), 
                 roundaboutExitDegrees: FfiConverterOptionUInt16.read(from: &buf), 
                 laneInfo: FfiConverterOptionSequenceTypeLaneInfo.read(from: &buf), 
-                exitNumbers: FfiConverterSequenceString.read(from: &buf)
+                exitNumbers: FfiConverterSequenceString.read(from: &buf), 
+                roundaboutExit: FfiConverterOptionUInt16.read(from: &buf)
         )
     }
 
@@ -3573,6 +3586,7 @@ public struct FfiConverterTypeVisualInstructionContent: FfiConverterRustBuffer {
         FfiConverterOptionUInt16.write(value.roundaboutExitDegrees, into: &buf)
         FfiConverterOptionSequenceTypeLaneInfo.write(value.laneInfo, into: &buf)
         FfiConverterSequenceString.write(value.exitNumbers, into: &buf)
+        FfiConverterOptionUInt16.write(value.roundaboutExit, into: &buf)
     }
 }
 
