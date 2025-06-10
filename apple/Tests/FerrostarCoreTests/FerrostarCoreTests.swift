@@ -24,7 +24,8 @@ let instructionContent = VisualInstructionContent(
     maneuverModifier: .straight,
     roundaboutExitDegrees: nil,
     laneInfo: nil,
-    exitNumbers: []
+    exitNumbers: [],
+    roundaboutExit: nil
 )
 let mockRoute = Route(
     geometry: mockGeom,
