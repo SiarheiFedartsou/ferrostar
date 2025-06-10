@@ -161,7 +161,8 @@ public struct InstructionsView: View {
                     maneuverModifier: .right,
                     roundaboutExitDegrees: nil,
                     laneInfo: nil,
-                    exitNumbers: []
+                    exitNumbers: [],
+                    roundaboutExit: nil
                 ),
                 secondaryContent: VisualInstructionContent(
                     text: "Merge onto Hwy 123",
@@ -169,7 +170,8 @@ public struct InstructionsView: View {
                     maneuverModifier: .right,
                     roundaboutExitDegrees: nil,
                     laneInfo: nil,
-                    exitNumbers: []
+                    exitNumbers: [],
+                    roundaboutExit: nil
                 ),
                 subContent: nil,
                 triggerDistanceBeforeManeuver: 123
@@ -201,7 +203,8 @@ public struct InstructionsView: View {
                     maneuverModifier: .slightLeft,
                     roundaboutExitDegrees: nil,
                     laneInfo: nil,
-                    exitNumbers: []
+                    exitNumbers: [],
+                    roundaboutExit: nil
                 ),
                 secondaryContent: nil,
                 subContent: nil,
@@ -219,7 +222,8 @@ public struct InstructionsView: View {
                     maneuverModifier: .right,
                     roundaboutExitDegrees: nil,
                     laneInfo: nil,
-                    exitNumbers: []
+                    exitNumbers: [],
+                    roundaboutExit: nil
                 ),
                 secondaryContent: VisualInstructionContent(
                     text: "Merge onto Hwy 123",
@@ -227,7 +231,8 @@ public struct InstructionsView: View {
                     maneuverModifier: .right,
                     roundaboutExitDegrees: nil,
                     laneInfo: nil,
-                    exitNumbers: []
+                    exitNumbers: [],
+                    roundaboutExit: nil
                 ),
                 subContent: nil,
                 triggerDistanceBeforeManeuver: 123
