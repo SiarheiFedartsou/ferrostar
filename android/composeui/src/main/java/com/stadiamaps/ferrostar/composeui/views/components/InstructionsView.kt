@@ -157,7 +157,8 @@ fun PreviewInstructionsView() {
                   maneuverModifier = ManeuverModifier.LEFT,
                   roundaboutExitDegrees = null,
                   laneInfo = null,
-                  exitNumbers = emptyList()),
+                  exitNumbers = emptyList(),
+                  roundaboutExit = null),
           secondaryContent = null,
           subContent = null,
           triggerDistanceBeforeManeuver = 42.0)
@@ -177,7 +178,8 @@ fun PreviewRTLInstructionsView() {
                   maneuverModifier = ManeuverModifier.LEFT,
                   roundaboutExitDegrees = null,
                   laneInfo = null,
-                  exitNumbers = emptyList()),
+                  exitNumbers = emptyList(),
+                  roundaboutExit = null),
           secondaryContent = null,
           subContent = null,
           triggerDistanceBeforeManeuver = 42.0)

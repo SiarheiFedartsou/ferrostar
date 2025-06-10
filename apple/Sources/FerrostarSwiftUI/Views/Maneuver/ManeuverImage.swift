@@ -24,15 +24,15 @@ public struct ManeuverImage: View {
         self.maneuverType = maneuverType
         self.roundaboutExit = roundaboutExit
     }
-    
+
     /// Determines if exit numbers should be displayed for the given maneuver type.
     /// Exit numbers are shown for roundabouts and rotaries.
     private func shouldShowExitNumber() -> Bool {
         switch maneuverType {
         case .roundabout, .rotary, .exitRoundabout, .exitRotary:
-            return true
+            true
         default:
-            return false
+            false
         }
     }
 
@@ -41,9 +41,9 @@ public struct ManeuverImage: View {
             Image(name.value, bundle: .module)
                 .resizable()
                 .aspectRatio(contentMode: .fit)
-            
+
             // Show exit number overlay for roundabouts/rotaries
-            if shouldShowExitNumber(), let roundaboutExit = roundaboutExit {
+            if shouldShowExitNumber(), let roundaboutExit {
                 VStack {
                     HStack {
                         Spacer()
