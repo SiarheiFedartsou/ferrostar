@@ -329,6 +329,7 @@ expression: routes
             roundabout_exit_degrees: ~
             lane_info: ~
             exit_numbers: []
+            roundabout_exit: ~
           secondary_content: ~
           sub_content: ~
           trigger_distance_before_maneuver: 111.251
@@ -359,6 +360,7 @@ expression: routes
             roundabout_exit_degrees: ~
             lane_info: ~
             exit_numbers: []
+            roundabout_exit: ~
           secondary_content: ~
           sub_content: ~
           trigger_distance_before_maneuver: 9
@@ -386,6 +388,7 @@ expression: routes
             roundabout_exit_degrees: ~
             lane_info: ~
             exit_numbers: []
+            roundabout_exit: ~
           secondary_content: ~
           sub_content: ~
           trigger_distance_before_maneuver: 16
@@ -415,6 +418,7 @@ expression: routes
             roundabout_exit_degrees: ~
             lane_info: ~
             exit_numbers: []
+            roundabout_exit: ~
           secondary_content: ~
           sub_content: ~
           trigger_distance_before_maneuver: 15
@@ -446,6 +450,7 @@ expression: routes
             roundabout_exit_degrees: ~
             lane_info: ~
             exit_numbers: []
+            roundabout_exit: ~
           secondary_content: ~
           sub_content: ~
           trigger_distance_before_maneuver: 38
@@ -473,6 +478,7 @@ expression: routes
             roundabout_exit_degrees: ~
             lane_info: ~
             exit_numbers: []
+            roundabout_exit: ~
           secondary_content: ~
           sub_content: ~
           trigger_distance_before_maneuver: 7
@@ -506,6 +512,7 @@ expression: routes
             roundabout_exit_degrees: ~
             lane_info: ~
             exit_numbers: []
+            roundabout_exit: ~
           secondary_content: ~
           sub_content: ~
           trigger_distance_before_maneuver: 70
@@ -535,6 +542,7 @@ expression: routes
             roundabout_exit_degrees: ~
             lane_info: ~
             exit_numbers: []
+            roundabout_exit: ~
           secondary_content: ~
           sub_content: ~
           trigger_distance_before_maneuver: 46
@@ -562,6 +570,7 @@ expression: routes
             roundabout_exit_degrees: ~
             lane_info: ~
             exit_numbers: []
+            roundabout_exit: ~
           secondary_content: ~
           sub_content: ~
           trigger_distance_before_maneuver: 131
@@ -595,6 +604,7 @@ expression: routes
             roundabout_exit_degrees: ~
             lane_info: ~
             exit_numbers: []
+            roundabout_exit: ~
           secondary_content: ~
           sub_content: ~
           trigger_distance_before_maneuver: 25
@@ -626,6 +636,7 @@ expression: routes
             roundabout_exit_degrees: ~
             lane_info: ~
             exit_numbers: []
+            roundabout_exit: ~
           secondary_content: ~
           sub_content: ~
           trigger_distance_before_maneuver: 16
@@ -671,6 +682,7 @@ expression: routes
             roundabout_exit_degrees: ~
             lane_info: ~
             exit_numbers: []
+            roundabout_exit: ~
           secondary_content: ~
           sub_content: ~
           trigger_distance_before_maneuver: 91
@@ -698,6 +710,7 @@ expression: routes
             roundabout_exit_degrees: ~
             lane_info: ~
             exit_numbers: []
+            roundabout_exit: ~
           secondary_content: ~
           sub_content: ~
           trigger_distance_before_maneuver: 8
@@ -731,6 +744,7 @@ expression: routes
             roundabout_exit_degrees: ~
             lane_info: ~
             exit_numbers: []
+            roundabout_exit: ~
           secondary_content: ~
           sub_content: ~
           trigger_distance_before_maneuver: 85
@@ -864,6 +878,7 @@ expression: routes
             roundabout_exit_degrees: ~
             lane_info: ~
             exit_numbers: []
+            roundabout_exit: ~
           secondary_content: ~
           sub_content: ~
           trigger_distance_before_maneuver: 1254
@@ -893,6 +908,7 @@ expression: routes
             roundabout_exit_degrees: ~
             lane_info: ~
             exit_numbers: []
+            roundabout_exit: ~
           secondary_content: ~
           sub_content: ~
           trigger_distance_before_maneuver: 23
@@ -922,6 +938,7 @@ expression: routes
             roundabout_exit_degrees: ~
             lane_info: ~
             exit_numbers: []
+            roundabout_exit: ~
           secondary_content: ~
           sub_content: ~
           trigger_distance_before_maneuver: 16
@@ -987,6 +1004,7 @@ expression: routes
             roundabout_exit_degrees: ~
             lane_info: ~
             exit_numbers: []
+            roundabout_exit: ~
           secondary_content: ~
           sub_content: ~
           trigger_distance_before_maneuver: 347
@@ -1014,6 +1032,7 @@ expression: routes
             roundabout_exit_degrees: ~
             lane_info: ~
             exit_numbers: []
+            roundabout_exit: ~
           secondary_content: ~
           sub_content: ~
           trigger_distance_before_maneuver: 2
@@ -1067,6 +1086,7 @@ expression: routes
             roundabout_exit_degrees: ~
             lane_info: ~
             exit_numbers: []
+            roundabout_exit: ~
           secondary_content: ~
           sub_content: ~
           trigger_distance_before_maneuver: 241
@@ -1094,6 +1114,7 @@ expression: routes
             roundabout_exit_degrees: ~
             lane_info: ~
             exit_numbers: []
+            roundabout_exit: ~
           secondary_content: ~
           sub_content: ~
           trigger_distance_before_maneuver: 28
@@ -1123,6 +1144,7 @@ expression: routes
             roundabout_exit_degrees: ~
             lane_info: ~
             exit_numbers: []
+            roundabout_exit: ~
           secondary_content: ~
           sub_content: ~
           trigger_distance_before_maneuver: 25.099
@@ -1150,6 +1172,7 @@ expression: routes
             roundabout_exit_degrees: ~
             lane_info: ~
             exit_numbers: []
+            roundabout_exit: ~
           secondary_content: ~
           sub_content: ~
           trigger_distance_before_maneuver: 0

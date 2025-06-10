@@ -241,6 +241,7 @@ impl RouteStep {
                     roundabout_exit_degrees: banner.primary.roundabout_exit_degrees,
                     lane_info: None,
                     exit_numbers: Self::extract_exit_numbers(&banner.primary),
+                    roundabout_exit: value.maneuver.exit,
                 },
                 secondary_content: banner.secondary.as_ref().map(|secondary| {
                     VisualInstructionContent {
@@ -250,6 +251,7 @@ impl RouteStep {
                         roundabout_exit_degrees: banner.primary.roundabout_exit_degrees,
                         lane_info: None,
                         exit_numbers: Self::extract_exit_numbers(&secondary),
+                        roundabout_exit: value.maneuver.exit,
                     }
                 }),
                 sub_content: banner.sub.as_ref().map(|sub| VisualInstructionContent {
@@ -276,6 +278,7 @@ impl RouteStep {
                         }
                     },
                     exit_numbers: Self::extract_exit_numbers(&sub),
+                    roundabout_exit: value.maneuver.exit,
                 }),
                 trigger_distance_before_maneuver: banner.distance_along_geometry,
             })
@@ -421,7 +424,7 @@ mod tests {
             })
             .collect();
 
-        // Assert that there's exactly one sub maneuver instructions as is the case in the test data
+        // Assert that there's exactly one sub_contents as is the case in the test data
         assert_eq!(
             sub_contents.len(),
             1,

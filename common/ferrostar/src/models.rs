@@ -635,6 +635,8 @@ pub struct VisualInstructionContent {
     pub lane_info: Option<Vec<LaneInfo>>,
     /// The exit number (or similar identifier like "8B").
     pub exit_numbers: Vec<String>,
+    /// The roundabout/rotary exit number (e.g., "take the 3rd exit").
+    pub roundabout_exit: Option<u16>,
 }
 
 /// An instruction for visual display (usually as banners) at a specific point along a [`RouteStep`].

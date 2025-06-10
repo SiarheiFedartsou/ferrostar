@@ -241,6 +241,9 @@ pub struct StepManeuver {
     pub modifier: Option<String>,
     /// Non-standard extension in Mapbox and Valhalla where the instruction is computed server-side
     instruction: Option<String>,
+
+    /// number of the exit to take. The property exists for the roundabout / rotary property: Number of the roundabout exit to take. 
+    pub exit: Option<u16>
 }
 
 impl StepManeuver {

@@ -443,6 +443,7 @@ expression: routes
             roundabout_exit_degrees: ~
             lane_info: ~
             exit_numbers: []
+            roundabout_exit: ~
           secondary_content: ~
           sub_content: ~
           trigger_distance_before_maneuver: 2089.442
@@ -473,6 +474,7 @@ expression: routes
             roundabout_exit_degrees: ~
             lane_info: ~
             exit_numbers: []
+            roundabout_exit: ~
           secondary_content: ~
           sub_content: ~
           trigger_distance_before_maneuver: 0
