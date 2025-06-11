@@ -3472,6 +3472,10 @@ public struct VisualInstructionContent {
      */
     public var roundaboutExitDegrees: UInt16?
     /**
+     * The number of the roundabout exit to take (e.g., 1st, 2nd, 3rd exit).
+     */
+    public var roundaboutExitNumber: UInt16?
+    /**
      * Detailed information about the lanes. This is typically only present in sub-maneuver instructions.
      */
     public var laneInfo: [LaneInfo]?
@@ -3500,6 +3504,9 @@ public struct VisualInstructionContent {
          * would be an exit angle of 180 degrees.
          */roundaboutExitDegrees: UInt16?, 
         /**
+         * The number of the roundabout exit to take (e.g., 1st, 2nd, 3rd exit).
+         */roundaboutExitNumber: UInt16?, 
+        /**
          * Detailed information about the lanes. This is typically only present in sub-maneuver instructions.
          */laneInfo: [LaneInfo]?, 
         /**
@@ -3509,6 +3516,7 @@ public struct VisualInstructionContent {
         self.maneuverType = maneuverType
         self.maneuverModifier = maneuverModifier
         self.roundaboutExitDegrees = roundaboutExitDegrees
+        self.roundaboutExitNumber = roundaboutExitNumber
         self.laneInfo = laneInfo
         self.exitNumbers = exitNumbers
     }
@@ -3530,6 +3538,9 @@ extension VisualInstructionContent: Equatable, Hashable {
         if lhs.roundaboutExitDegrees != rhs.roundaboutExitDegrees {
             return false
         }
+        if lhs.roundaboutExitNumber != rhs.roundaboutExitNumber {
+            return false
+        }
         if lhs.laneInfo != rhs.laneInfo {
             return false
         }
@@ -3544,6 +3555,7 @@ extension VisualInstructionContent: Equatable, Hashable {
         hasher.combine(maneuverType)
         hasher.combine(maneuverModifier)
         hasher.combine(roundaboutExitDegrees)
+        hasher.combine(roundaboutExitNumber)
         hasher.combine(laneInfo)
         hasher.combine(exitNumbers)
     }
@@ -3561,6 +3573,7 @@ public struct FfiConverterTypeVisualInstructionContent: FfiConverterRustBuffer {
                 maneuverType: FfiConverterOptionTypeManeuverType.read(from: &buf), 
                 maneuverModifier: FfiConverterOptionTypeManeuverModifier.read(from: &buf), 
                 roundaboutExitDegrees: FfiConverterOptionUInt16.read(from: &buf), 
+                roundaboutExitNumber: FfiConverterOptionUInt16.read(from: &buf), 
                 laneInfo: FfiConverterOptionSequenceTypeLaneInfo.read(from: &buf), 
                 exitNumbers: FfiConverterSequenceString.read(from: &buf)
         )
@@ -3571,6 +3584,7 @@ public struct FfiConverterTypeVisualInstructionContent: FfiConverterRustBuffer {
         FfiConverterOptionTypeManeuverType.write(value.maneuverType, into: &buf)
         FfiConverterOptionTypeManeuverModifier.write(value.maneuverModifier, into: &buf)
         FfiConverterOptionUInt16.write(value.roundaboutExitDegrees, into: &buf)
+        FfiConverterOptionUInt16.write(value.roundaboutExitNumber, into: &buf)
         FfiConverterOptionSequenceTypeLaneInfo.write(value.laneInfo, into: &buf)
         FfiConverterSequenceString.write(value.exitNumbers, into: &buf)
     }

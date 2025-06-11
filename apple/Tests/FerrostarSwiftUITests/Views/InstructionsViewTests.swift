@@ -15,7 +15,8 @@ final class InstructionsViewTests: XCTestCase {
                         maneuverModifier: .right,
                         roundaboutExitDegrees: nil,
                         laneInfo: nil,
-                        exitNumbers: []
+                        exitNumbers: [],
+                        roundaboutExitNumber: nil
                     ),
                     secondaryContent: VisualInstructionContent(
                         text: "Merge onto Hwy 123",
@@ -23,7 +24,8 @@ final class InstructionsViewTests: XCTestCase {
                         maneuverModifier: .right,
                         roundaboutExitDegrees: nil,
                         laneInfo: nil,
-                        exitNumbers: []
+                        exitNumbers: [],
+                        roundaboutExitNumber: nil
                     ),
                     subContent: nil,
                     triggerDistanceBeforeManeuver: 123
@@ -44,7 +46,8 @@ final class InstructionsViewTests: XCTestCase {
                         maneuverModifier: .right,
                         roundaboutExitDegrees: nil,
                         laneInfo: nil,
-                        exitNumbers: []
+                        exitNumbers: [],
+                        roundaboutExitNumber: nil
                     ),
                     secondaryContent: VisualInstructionContent(
                         text: "Merge onto Hwy 123",
@@ -52,7 +55,8 @@ final class InstructionsViewTests: XCTestCase {
                         maneuverModifier: .right,
                         roundaboutExitDegrees: nil,
                         laneInfo: nil,
-                        exitNumbers: []
+                        exitNumbers: [],
+                        roundaboutExitNumber: nil
                     ),
                     subContent: nil,
                     triggerDistanceBeforeManeuver: 123
@@ -73,7 +77,8 @@ final class InstructionsViewTests: XCTestCase {
                         maneuverModifier: .slightRight,
                         roundaboutExitDegrees: nil,
                         laneInfo: nil,
-                        exitNumbers: []
+                        exitNumbers: [],
+                        roundaboutExitNumber: nil
                     ),
                     secondaryContent: nil,
                     subContent: nil,
@@ -95,7 +100,8 @@ final class InstructionsViewTests: XCTestCase {
                         maneuverModifier: .slightRight,
                         roundaboutExitDegrees: nil,
                         laneInfo: nil,
-                        exitNumbers: []
+                        exitNumbers: [],
+                        roundaboutExitNumber: nil
                     ),
                     secondaryContent: nil,
                     subContent: nil,
@@ -118,7 +124,8 @@ final class InstructionsViewTests: XCTestCase {
                         maneuverModifier: .slightRight,
                         roundaboutExitDegrees: nil,
                         laneInfo: nil,
-                        exitNumbers: []
+                        exitNumbers: [],
+                        roundaboutExitNumber: nil
                     ),
                     secondaryContent: nil,
                     subContent: nil,
@@ -141,7 +148,8 @@ final class InstructionsViewTests: XCTestCase {
                         maneuverModifier: .slightRight,
                         roundaboutExitDegrees: nil,
                         laneInfo: nil,
-                        exitNumbers: []
+                        exitNumbers: [],
+                        roundaboutExitNumber: nil
                     ),
                     secondaryContent: nil,
                     subContent: nil,
@@ -165,7 +173,8 @@ final class InstructionsViewTests: XCTestCase {
                         maneuverModifier: .slightRight,
                         roundaboutExitDegrees: nil,
                         laneInfo: nil,
-                        exitNumbers: []
+                        exitNumbers: [],
+                        roundaboutExitNumber: nil
                     ),
                     secondaryContent: nil,
                     subContent: nil,
@@ -189,7 +198,8 @@ final class InstructionsViewTests: XCTestCase {
                         maneuverModifier: .left,
                         roundaboutExitDegrees: nil,
                         laneInfo: nil,
-                        exitNumbers: []
+                        exitNumbers: [],
+                        roundaboutExitNumber: nil
                     ),
                     secondaryContent: nil,
                     subContent: nil,

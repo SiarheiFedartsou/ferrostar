@@ -631,6 +631,8 @@ pub struct VisualInstructionContent {
     /// (as if you had gone straight, apart from the detour)
     /// would be an exit angle of 180 degrees.
     pub roundabout_exit_degrees: Option<u16>,
+    /// The number of the roundabout exit to take (e.g., 1st, 2nd, 3rd exit).
+    pub roundabout_exit_number: Option<u16>,
     /// Detailed information about the lanes. This is typically only present in sub-maneuver instructions.
     pub lane_info: Option<Vec<LaneInfo>>,
     /// The exit number (or similar identifier like "8B").

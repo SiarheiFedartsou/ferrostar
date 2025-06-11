@@ -66,6 +66,7 @@ fun NavigationState.Companion.pedestrianExample(): NavigationState {
                               maneuverType = ManeuverType.TURN,
                               maneuverModifier = ManeuverModifier.RIGHT,
                               roundaboutExitDegrees = null,
+                              roundaboutExitNumber = null,
                               laneInfo = null,
                               exitNumbers = emptyList()),
                       secondaryContent = null,
