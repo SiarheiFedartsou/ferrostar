@@ -198,6 +198,9 @@ pub struct BannerContent {
     /// the original travel.
     #[serde(rename = "degrees")]
     pub roundabout_exit_degrees: Option<u16>,
+    /// The number of the roundabout exit to take.
+    #[serde(rename = "exit")]
+    pub roundabout_exit_number: Option<u16>,
     /// Extra information for displaying the instructions (ex lanes, images, etc)
     pub components: Vec<BannerContentComponent>,
 }

@@ -26,6 +26,7 @@ class InstructionViewTest {
                     maneuverType = ManeuverType.TURN,
                     maneuverModifier = ManeuverModifier.LEFT,
                     roundaboutExitDegrees = null,
+                    roundaboutExitNumber = null,
                     laneInfo = null,
                     exitNumbers = emptyList()),
             secondaryContent = null,

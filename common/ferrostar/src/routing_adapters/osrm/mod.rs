@@ -239,6 +239,7 @@ impl RouteStep {
                     maneuver_type: banner.primary.maneuver_type,
                     maneuver_modifier: banner.primary.maneuver_modifier,
                     roundabout_exit_degrees: banner.primary.roundabout_exit_degrees,
+                    roundabout_exit_number: banner.primary.roundabout_exit_number,
                     lane_info: None,
                     exit_numbers: Self::extract_exit_numbers(&banner.primary),
                 },
@@ -247,7 +248,8 @@ impl RouteStep {
                         text: secondary.text.clone(),
                         maneuver_type: secondary.maneuver_type,
                         maneuver_modifier: secondary.maneuver_modifier,
-                        roundabout_exit_degrees: banner.primary.roundabout_exit_degrees,
+                        roundabout_exit_degrees: secondary.roundabout_exit_degrees,
+                        roundabout_exit_number: secondary.roundabout_exit_number,
                         lane_info: None,
                         exit_numbers: Self::extract_exit_numbers(&secondary),
                     }
@@ -257,6 +259,7 @@ impl RouteStep {
                     maneuver_type: sub.maneuver_type,
                     maneuver_modifier: sub.maneuver_modifier,
                     roundabout_exit_degrees: sub.roundabout_exit_degrees,
+                    roundabout_exit_number: sub.roundabout_exit_number,
                     lane_info: {
                         let lane_infos: Vec<LaneInfo> = sub
                             .components

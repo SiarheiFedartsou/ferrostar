@@ -15,7 +15,8 @@ struct CPManeuverTests {
                 maneuverModifier: .sharpLeft,
                 roundaboutExitDegrees: nil,
                 laneInfo: [],
-                exitNumbers: []
+                exitNumbers: [],
+                roundaboutExitNumber: nil
             ),
             secondaryContent: nil,
             subContent: nil,

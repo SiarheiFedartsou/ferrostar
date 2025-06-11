@@ -28,6 +28,7 @@ class ManeuverImageTest {
               maneuverType = ManeuverType.TURN,
               maneuverModifier = ManeuverModifier.RIGHT,
               roundaboutExitDegrees = null,
+              roundaboutExitNumber = null,
               laneInfo = null,
               exitNumbers = emptyList()))
     }
@@ -42,6 +43,7 @@ class ManeuverImageTest {
               maneuverType = ManeuverType.FORK,
               maneuverModifier = ManeuverModifier.LEFT,
               roundaboutExitDegrees = null,
+              roundaboutExitNumber = null,
               laneInfo = null,
               exitNumbers = emptyList()))
     }
@@ -56,6 +58,7 @@ class ManeuverImageTest {
               maneuverType = ManeuverType.FORK,
               maneuverModifier = ManeuverModifier.LEFT,
               roundaboutExitDegrees = null,
+              roundaboutExitNumber = null,
               laneInfo = null,
               exitNumbers = emptyList()),
           tint = Color.Magenta)
